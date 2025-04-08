@@ -9,20 +9,20 @@
     <meta property="og:image" content="https://via.placeholder.com/150/ffb6c1/ffffff?text=♥">
     <style>
         body {
-            background: linear-gradient(to bottom, #e6e6fa, #b0c4de); /* Lavender to light steel blue */
+            background: linear-gradient(to bottom, #ffd1dc, #ff69b4); /* Pale pink to hot pink */
             font-family: "Verdana", sans-serif;
             text-align: center;
             padding: 20px;
         }
         h1 {
-            color: #ff6347; /* Tomato red */
+            color: #ffffff; /* White for contrast */
             font-size: 40px;
-            text-shadow: 2px 2px 4px #dcdcdc;
+            text-shadow: 2px 2px 4px #ff1493; /* Deep pink shadow */
         }
         p {
-            color: #483d8b; /* Dark slate blue */
+            color: #c71585; /* Medium violet red */
             font-size: 22px;
-            background-color: rgba(255, 245, 238, 0.8); /* Seashell */
+            background-color: rgba(255, 182, 193, 0.8); /* Light pink with transparency */
             padding: 20px;
             border-radius: 15px;
             max-width: 700px;
@@ -32,8 +32,9 @@
             display: none; /* Hides the message by default */
         }
         #prompt {
-            color: #ff1493; /* Deep pink */
+            color: #ffffff; /* White for visibility */
             font-size: 24px;
+            text-shadow: 1px 1px 2px #ff69b4; /* Hot pink shadow */
         }
     </style>
 </head>
@@ -46,7 +47,7 @@
     <p id="prompt">Check your Instagram DM for the password!</p>
     <script>
         let password = prompt("Enter the password:");
-        if (password === "bonbony") { /* Change this to your chosen password */
+        if (password === "bonbony") {
             document.getElementById("message").style.display = "block";
             document.getElementById("prompt").style.display = "none";
         } else {
