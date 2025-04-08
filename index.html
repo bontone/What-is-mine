@@ -2,32 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>To my lovely tomato </title>
+    <title>To my lovely Tomato </title>
+    <meta name="description" content="A special message just for you! Click to find out.">
+    <meta property="og:title" content="A Secret for You">
+    <meta property="og:description" content="Open this link to see something special!">
+    <meta property="og:image" content="https://via.placeholder.com/150/ffb6c1/ffffff?text=♥">
     <style>
         body {
-            background: linear-gradient(to bottom, #ffe4e1, #ffb6c1); /* Misty rose to light pink */
-            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e6e6fa, #b0c4de); /* Lavender to light steel blue */
+            font-family: "Verdana", sans-serif;
             text-align: center;
             padding: 20px;
         }
         h1 {
-            color: #ff69b4; /* Hot pink */
-            text-shadow: 1px 1px 2px #ffffff; /* Subtle white shadow */
-            font-size: 36px;
+            color: #ff6347; /* Tomato red */
+            font-size: 40px;
+            text-shadow: 2px 2px 4px #dcdcdc;
         }
         p {
-            color: #4b0082; /* Deep indigo */
-            font-size: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
-            padding: 15px;
-            border-radius: 10px; /* Rounded edges */
-            max-width: 600px; /* Keeps it readable */
-            margin: 0 auto; /* Centers the paragraph */
+            color: #483d8b; /* Dark slate blue */
+            font-size: 22px;
+            background-color: rgba(255, 245, 238, 0.8); /* Seashell */
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        #message {
+            display: none; /* Hides the message by default */
+        }
+        #prompt {
+            color: #ff1493; /* Deep pink */
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
-    <h1>Your Secret Message</h1>
-    <p>I'm sorry sweetheart, I do really love as a friend, girlfriend or as an anything, what I really know that I love spending time with you and I don't want to see you sad or hurt, what do you think I would feel if i was the person who hurts you, I am so FKN sorry babe, mwah &lt;3 </p>
+    <h1>A Secret Message Awaits...</h1>
+    <div id="message">
+        <h1>Your Secret Message</h1>
+        <p>I'm sorry sweetheart, I do really love as a friend, girlfriend or as an anything, what I really know that I love spending time with you and I don't want to see you sad or hurt, what do you think I would feel if i was the person who hurts you, I am so FKN sorry babe, mwah <3 </p>
+    </div>
+    <p id="prompt">Check your Instagram DM for the password!</p>
+    <script>
+        let password = prompt("Enter the password:");
+        if (password === "yourpassword") { /* Change this to your chosen password */
+            document.getElementById("message").style.display = "block";
+            document.getElementById("prompt").style.display = "none";
+        } else {
+            alert("Sorry, wrong password! Try again.");
+        }
+    </script>
 </body>
 </html>
